@@ -1,0 +1,42 @@
+.skip {
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    background-color: yellow;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.first {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    border: 3px solid #e91e63;
+    gap: 50px;
+}
+
+.first p {
+    border: 3px dashed #7332a8;
+    background-color: gray;
+    border-radius: 50%;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.first p:last-child {
+    grid-column: 1 / -1;
+    border-radius: 0%;
+}
+
+.first p :nth-child {
+    background-color: yellow;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
